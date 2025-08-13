@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .container {
-    @apply max-w-[1600px] w-full m-auto overflow-hidden
+    @apply max-w-[1300px] w-full m-auto overflow-hidden
 }
