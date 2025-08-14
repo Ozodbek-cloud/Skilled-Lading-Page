@@ -8,13 +8,36 @@
     <link rel="stylesheet" href="output.css">
 </head>
 
-<body >
+<body>
     <header class="overflow-hidden relative">
+        <div class="close " onclick="event.stopPropagation">
+            <div
+                class="modal fixed hidden top-0 left-0 w-screen h-screen bg-black opacity-55 z-[1000] flex justify-center items-center ">
+                <div
+                    class="w-[600px] h-[600px] bg-gradient-to-b from-[#ff6f48] to-[#f02aa6] absolute opacity-100 rounded-3xl p-15 flex flex-col gap-8 ">
+                    <button class=" btn2 font-bold text-5xl absolute text-[#fff] left-[520px] top-[30px]">X</button>
+                    <h2 class="text-5xl text-[#fff] font-bold">Get Started</h2>
+                    <div class="flex flex-col gap-[50px]">
+                        <div>
+                            <h2 class="text-3xl text-[#fff] font-bold">Name</h2>
+                            <input type="text" class="w-[400px] h-[50px] bg-amber-50 rounded-2xl">
+                        </div>
+                        <div>
+                            <h2 class="text-3xl text-[#fff] font-bold">Surname</h2>
+                            <input type="text" class="w-[400px] h-[50px] bg-amber-50 rounded-2xl">
+                        </div>
+                        <button
+                            class="w-[200px] h-[50px] border-2 rounded-2xl bg-amber-50 text-[#F74780] text-2xl font-bold">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section>
             <div class="container  p-10 flex items-center justify-center">
                 <div class="flex  w-full max-w-[1400px] justify-between items-center">
                     <img src="skilled.svg" alt="">
-                    <button class="w-[167px] h-[56px]  rounded-3xl bg-[#13183f] font-bold text-[#fff] hover:opacity-[0.3]">Get
+                    <button
+                        class="btn w-[167px] h-[56px]  rounded-3xl bg-[#13183f] font-bold text-[#fff] hover:opacity-[0.3]">Get
                         Started</button>
                 </div>
             </div>
@@ -22,20 +45,28 @@
         <section class="container hero  h-[700px] flex items-center justify-center">
             <div class=" h-[700px] w-[700px] flex pt-[100px] ml-[40px]">
                 <div class=" w-[457px] h-[359px]">
-                     <h1 class="text-[55px] font-bold">Maximize skill,<br>minimize budget</h1>
-                     <h3 class="font-bold text-[#83869A]">Our modern courses across a range of in-demand<br>skills will give you the knowledge you need to live<br>the life you want.</h3>
-                     <button class="w-[167px] h-[63px] bg-gradient-to-b from-[#ff6f48] to-[#f02aa6] rounded-4xl mt-[40px] font-bold text-[#fff] hover:opacity-[0.5]">Get Started</button>
+                    <h1 class="text-[55px] font-bold">Maximize skill,<br>minimize budget</h1>
+                    <h3 class="font-bold text-[#83869A]">Our modern courses across a range of in-demand<br>skills will
+                        give you the knowledge you need to live<br>the life you want.</h3>
+                    <button
+                        class="w-[167px] h-[63px] bg-gradient-to-b from-[#ff6f48] to-[#f02aa6] rounded-4xl mt-[40px] font-bold text-[#fff] hover:opacity-[0.5]">Get
+                        Started</button>
                 </div>
             </div>
             <div class=" h-[700px] w-[700px]  flex items-center justify-center">
-                <div class="w-[317px] h-[560px]  rounded-[158.5px] ml-[200px] bg-gradient-to-b from-[#ff6f48] to-[#f02aa6] flex justify-center items-center overflow-hidden">
-                    <div class="w-[317px] h-[1000px] bg-gradient-to-b from-[#4851FF] rotate-[45deg] to-[#F02AA6]  absolute right-[35px] bottom-[50px] z-[-1] rounded-4xl overflow-hidded"></div>
+                <div
+                    class="w-[317px] h-[560px]  rounded-[158.5px] ml-[200px] bg-gradient-to-b from-[#ff6f48] to-[#f02aa6] flex justify-center items-center overflow-hidden">
+                    <div
+                        class="w-[317px] h-[1000px] bg-gradient-to-b from-[#4851FF] rotate-[45deg] to-[#F02AA6]  absolute right-[35px] bottom-[50px] z-[-1] rounded-4xl overflow-hidded">
+                    </div>
                     <img src="./image-removebg-preview(509).png" alt="" class="mt-[90px]">
-                    <div class="w-[199px] h-[120px]  absolute bottom-[250px] right-[550px] rounded-3xl bg-[#fff] flex flex-col justify-center gap-[10px] p-4 shadow-[0px_5px_60px_-3px_#bfd4ff]">
+                    <div
+                        class="w-[199px] h-[120px]  absolute bottom-[250px] right-[550px] rounded-3xl bg-[#fff] flex flex-col justify-center gap-[10px] p-4 shadow-[0px_5px_60px_-3px_#bfd4ff]">
                         <p class="text-[#83869A] font-bold">Course hours</p>
                         <h2 class="text-5xl font-bold">1,451</h2>
                     </div>
-                    <div class="w-[155px] h-[120px] absolute top-[320px] right-55 rounded-3xl bg-[#fff] flex flex-col justify-center gap-[10px] p-4 shadow-[0px_5px_60px_-3px_#bfd4ff]">
+                    <div
+                        class="w-[155px] h-[120px] absolute top-[320px] right-55 rounded-3xl bg-[#fff] flex flex-col justify-center gap-[10px] p-4 shadow-[0px_5px_60px_-3px_#bfd4ff]">
                         <p class="text-[#83869A] font-bold">Members</p>
                         <h2 class="text-5xl font-bold">29k</h2>
                     </div>
@@ -44,54 +75,76 @@
         </section>
     </header>
     <main class="container  h-[900px] flex justify-center items-end mt-[200px]">
-        <div class="w-[1400px] h-[800px]  grid grid-cols-3 gap-8 ml-[40px]" >
-            <div class="h-[322px]  rounded-3xl bg-gradient-to-b  from-[#ff6f48] to-[#f02aa6] p-15 shadow-[0px_5px_60px_-20px_#bfd4ff]" >
+        <div class="w-[1400px] h-[800px]  grid grid-cols-3 gap-8 ml-[40px]">
+            <div
+                class="h-[322px]  rounded-3xl bg-gradient-to-b  from-[#ff6f48] to-[#f02aa6] p-15 shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <h2 class="text-5xl font-bold text-[#fff]">Check out our<br>most popular<br>courses!</h2>
             </div>
             <div class="h-[322px]  rounded-3xl p-15 flex flex-col gap-[30px] shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <img src="Group 8.svg" alt="" class="w-[70px] h-[70px] absolute bottom-[-10px]">
                 <h2 class="text-3xl font-bold">Animation</h2>
-                <p class="text-[17px] text-[#83869A]">Learn the latest animation<br>techniques to create stunning<br>motion design and captivate your<br>audience.</p>
+                <p class="text-[17px] text-[#83869A]">Learn the latest animation<br>techniques to create
+                    stunning<br>motion design and captivate your<br>audience.</p>
                 <p class="font-bold text-[#F74780] text-[18px]">Get Started</p>
             </div>
             <div class="h-[322px]  rounded-3xl p-15 flex flex-col gap-[30px] shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <img src="Group 16.svg" alt="" class="w-[70px] h-[70px] absolute bottom-[-10px]">
                 <h2 class="text-3xl font-bold">Design</h2>
-                <p class="text-[17px] text-[#83869A]">Create beautiful, usable<br>interfaces to help shape the<br>future of how the web<br>looks.</p>
+                <p class="text-[17px] text-[#83869A]">Create beautiful, usable<br>interfaces to help shape the<br>future
+                    of how the web<br>looks.</p>
                 <p class="font-bold text-[#F74780] text-[18px]">Get Started</p>
             </div>
             <div class="h-[322px]  rounded-3xl p-15 flex flex-col gap-[30px] shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <img src="Group 17.svg" alt="" class="w-[70px] h-[70px] absolute bottom-[-420px]">
                 <h2 class="text-3xl font-bold">Photography</h2>
-                <p class="text-[17px] text-[#83869A]">Explore critical fundamentals like<br>lighting, composition, and focus<br>to capture exceptional<br>photos.</p>
+                <p class="text-[17px] text-[#83869A]">Explore critical fundamentals like<br>lighting, composition, and
+                    focus<br>to capture exceptional<br>photos.</p>
                 <p class="font-bold text-[#F74780] text-[18px]">Get Started</p>
             </div>
             <div class="h-[322px]  rounded-3xl p-15 flex flex-col gap-[30px] shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <img src="Group 20.svg" alt="" class="w-[70px] h-[70px] absolute bottom-[-420px]">
                 <h2 class="text-3xl font-bold">Crypto</h2>
-                <p class="text-[17px] text-[#83869A]">All you need to know to get<br>started investing in crypto. Go<br>from beginner to advanced with<br>this 54 hour course.</p>
+                <p class="text-[17px] text-[#83869A]">All you need to know to get<br>started investing in crypto.
+                    Go<br>from beginner to advanced with<br>this 54 hour course.</p>
                 <p class="font-bold text-[#F74780] text-[18px]">Get Started</p>
             </div>
             <div class="h-[322px]  rounded-3xl p-15 flex flex-col gap-[30px] shadow-[0px_5px_60px_-20px_#bfd4ff]">
                 <img src="Group 20.svg" alt="" class="w-[70px] h-[70px] absolute bottom-[-420px]">
                 <h2 class="text-3xl font-bold">Business</h2>
-                <p class="text-[17px] text-[#83869A] ">A step-by-step playbook to help<br>you start, scale, and sustain your<br>business without outside<br>investment.</p>
+                <p class="text-[17px] text-[#83869A] ">A step-by-step playbook to help<br>you start, scale, and sustain
+                    your<br>business without outside<br>investment.</p>
                 <p class="font-bold text-[#F74780] text-[18px]">Get Started</p>
             </div>
         </div>
 
     </main>
     <footer class="container1">
-        <section >
+        <section>
             <div class=" p-10 flex items-center justify-center  bg-[#13183f]">
                 <div class="flex  w-full max-w-[1250px] justify-between items-center  ml-[20px] ">
                     <img src="skilled (1).svg" alt="">
-                    <button class="w-[167px] h-[56px]  rounded-3xl bg-gradient-to-b from-[#4851FF] to-[#f02aa6] font-bold text-[#fff] hover:opacity-[0.5]">Get
+                    <button
+                        class="w-[167px] h-[56px]  rounded-3xl bg-gradient-to-b from-[#4851FF] to-[#f02aa6] font-bold text-[#fff] hover:opacity-[0.5]">Get
                         Started</button>
                 </div>
             </div>
         </section>
     </footer>
+    <script>
+        let btn = document.querySelector(".btn")
+        let btn2 = document.querySelector(".btn2")
+        let modal = document.querySelector(".modal")
+        let close = document.querySelector(".close")
+        btn.addEventListener("click", () => {
+            modal.classList.toggle("hidden")
+        })
+        btn2.addEventListener("click", () => {
+            modal.classList.toggle("hidden")
+        })
+        close.addEventListener("click", () => {
+            modal.classList.toggle("hidden")
+        })
+    </script>
 </body>
 
 </html>
